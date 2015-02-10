@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movies</string>
+    <string name="action_settings">Settings</string>
+    <string name="check_connection">Connection Error !</string>
+    <string name="best_movie">Just Shake Your Phone To Find Best Movies Information !</string>
+    <string name="message_dialog">Movie Loading...</string>
+    <string name="more_details">Sliding up to more details..</string>
+</resources>

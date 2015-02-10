@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff72b0ff">
+
+
+    <com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#ffe7ffee"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="48sp"
+                discrollve:discrollve_translation="fromLeft|fromBottom"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_orange_light"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="25dp"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                discrollve:discrollve_translation="fromRight|fromBottom"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textPoint"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_red_light"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="25dp"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                discrollve:discrollve_translation="fromRight|fromBottom"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textRuntime"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_blue_dark"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="25dp"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                discrollve:discrollve_translation="fromTop|fromLeft"
+                tools:visibility="gone" />
+
+
+            <main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvablePurpleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_purple"
+                android:orientation="vertical"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="18sp"
+                    discrollve:discrollve_alpha="true"
+                    discrollve:discrollve_translation="fromTop|fromRight" />
+
+            </main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvablePurpleLayout>
+
+            <main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvablePathLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textActors"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    discrollve:discrollve_translation="fromBottom|fromLeft" />
+
+            </main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvablePathLayout>
+
+            <main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableRedLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@android:color/holo_red_dark"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textPlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableRedLayout>
+
+            <main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableGreenLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/greenView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="50dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:translationY="-50dp" />
+
+            </main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableGreenLayout>
+
+            <!--<main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableLastLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center">-->
+
+            <!--<WebView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/webView"-->
+            <!--android:layout_alignBottom="@+id/image"-->
+            <!--android:layout_centerHorizontal="true"/>-->
+
+            <!--</main.yurtrehberi.yourmovies.ExternalLibrary.DiscrollvableLastLayout>-->
+
+        </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+    </com.flavienlaurent.discrollview.lib.DiscrollView>
+
+
+    <main.yurtrehberi.yourmovies.ExternalLibrary.SlidingUpPanel
+        android:id="@+id/sliding_up_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shake" />
+
+                <com.cengalabs.flatui.views.FlatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/txt_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="15dip"
+                    android:text="@string/more_details"
+                    android:textSize="16dip"
+                    flatui:fl_backgroundColor="fl_main"
+                    flatui:fl_cornerRadius="0dp"
+                    flatui:fl_textColor="fl_light" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </main.yurtrehberi.yourmovies.ExternalLibrary.SlidingUpPanel>
+
+</FrameLayout>
