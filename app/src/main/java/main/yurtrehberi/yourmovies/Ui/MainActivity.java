@@ -147,13 +147,17 @@ public class MainActivity extends RoboActivity implements ShakeDetector.Listener
                 } else {
                     Picasso.with(getApplicationContext()).load(R.drawable.shake).into(image);
                 }
+
+                if (mProgressDialog.isShowing()) {
+                    mProgressDialog.dismiss();
+                }
             }
 
             @Override
             public void failure(RetrofitError error) {
                 if (mProgressDialog.isShowing())
                     mProgressDialog.dismiss();
-                //     Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -164,9 +168,6 @@ public class MainActivity extends RoboActivity implements ShakeDetector.Listener
         new BounceAnimation(image).animate();
 
         getMovies();
-
-        if (mProgressDialog.isShowing())
-            mProgressDialog.dismiss();
 
 
     }

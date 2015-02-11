@@ -26,7 +26,7 @@ public class ShakeDetector implements SensorEventListener {
      * When the magnitude of total acceleration exceeds this
      * value, the phone is accelerating.
      */
-    private static final int ACCELERATION_THRESHOLD = 13;
+    private static final int ACCELERATION_THRESHOLD = 10;
 
     /**
      * Listens for shakes.
@@ -117,7 +117,7 @@ public class ShakeDetector implements SensorEventListener {
         /**
          * Window size in ns. Used to compute the average.
          */
-        private static final long MAX_WINDOW_SIZE = 350000000; // 0.5s
+        private static final long MAX_WINDOW_SIZE = 650000000; // 0.5s
         private static final long MIN_WINDOW_SIZE = MAX_WINDOW_SIZE >> 1; // 0.25s
 
         /**
@@ -125,7 +125,7 @@ public class ShakeDetector implements SensorEventListener {
          * fails to deliver this many events during the time window. The LG Ally
          * is one such device.
          */
-        private static final int MIN_QUEUE_SIZE = 20;
+        private static final int MIN_QUEUE_SIZE = 14;
 
         private final SamplePool pool = new SamplePool();
 

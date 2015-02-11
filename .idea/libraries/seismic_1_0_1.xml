@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="seismic-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/seismic/1.0.1/c4c8bd6911ef28f2ea8d3719332d42401d2be63a/seismic-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/seismic/1.0.1/5b999d27b2f71ddb39303a462c5b4002c4eb9d99/seismic-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

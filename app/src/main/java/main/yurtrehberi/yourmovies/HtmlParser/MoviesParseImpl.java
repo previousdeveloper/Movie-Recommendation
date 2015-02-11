@@ -30,8 +30,8 @@ public class MoviesParseImpl implements IParse {
             allLinks.add(MovieLinkConstans.URL_2009);
             allLinks.add(MovieLinkConstans.URL_2010);
             allLinks.add(MovieLinkConstans.URL_2011);
-            //  allLinks.add(MovieLinkConstans.URL_2012);
-            //allLinks.add(MovieLinkConstans.URL_2013);
+            allLinks.add(MovieLinkConstans.URL_2012);
+            allLinks.add(MovieLinkConstans.URL_2013);
             // allLinks.add(MovieLinkConstans.URL_2014);
             // allLinks.add(MovieLinkConstans.URL_2015);
 
